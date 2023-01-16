@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Los Survey Form</title>
+<style>
+label {
+  display: block;
+  margin: 10px 0;
+}
+</style>
+<style>
+textarea {
+  display: block;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+  <h1 id="title">Los Experience Survey Form</h1>
+  <p id="description">Los is a mythical legendary fantastic bro. This survey pertains to your personal interaction with Los.</p>
+</p> <p>Initially he might come off as a self centered a-hole but he'll soon win you over with you with his sharp wit and endless wacky stories. (Warning! Your mileage may vary.)
+  <form id="survey-form">
+      <label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="Name" required />
+      </label>
+      <label for="email" id="email-label">Enter your email: <input id="email" type="email" placeholder="Email" required />
+      </label>
+      <label for="number" id="number-label">Input your age:
+         <input id="number" type="number" name="age" min="21" max="50" placeholder="Age" />
+         </label>
+      <label for="dropdown">Rate your experience:
+      <select id="dropdown" name="dropdown">
+        <option value="">Choose One</option>
+        <option value="1">Satisfactory</option>
+        <option value="2">Unsatisfactory</option>
+      </select>
+      </label>
+      <p>How would you describe Los' overall demeanor?<p>
+      <label for="happy-go-lucky">
+        <input id="happy-go-lucky" value="happy-go-lucky" type="radio" name="demeanor" /> Happy-go-lucky
+      </label>
+      <label for="psychotic">
+        <input id="psychotic" value="psychotic" type="radio" name="demeanor" /> Psychotic
+      </label>
+      <p>What features would you like to see in the next version of Los?
+            <span>(Check all that apply)</span>
+          </p>
+          <label>
+            <input name="features" value="Absolute silence" type="checkbox" /> Absolute silence
+          </label>
+          <label>
+            <input name="features" value="Agreeability" type="checkbox" /> High level of agreeability
+          </label>
+          <label>
+            <input name="features" value="Endless drugs" type="checkbox" /> Endless supply of drugs to share
+          </label>
+          <label>
+            <input name="features" value="WTF" type="checkbox" /> What the fuck is a Los?
+          </label>
+
+          <label for="comments">Any further comments or suggestions: 
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Feel free to enter anything that comes to mind."></textarea>
+        </label>
+        <label for="terms">
+            <input id="terms" value="terms" type="checkbox" required name="terms" /> I agree to all Los' terms and conditions.
+        </label>
+      <input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</HTML>
